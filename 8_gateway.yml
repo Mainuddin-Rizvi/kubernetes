@@ -40,11 +40,11 @@ spec:
             configMapKeyRef:
               name: eazybank-configmap
               key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
-        - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI
+        - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI
           valueFrom:
             configMapKeyRef:
               name: eazybank-configmap
-              key: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI
+              key: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI
 ---
 apiVersion: v1
 kind: Service
